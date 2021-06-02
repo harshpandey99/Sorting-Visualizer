@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Sorting Visualizer </title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvV5jkkCaXUKRmVdcuPupb3IwYC1QJl0kFXQ&usqp=CAU">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="sorting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+<body>
+<h2 class="heading animate__animated animate__animated"> Sorting visualizer</h2>
+
+<div id="nav-bar">
+	
+    <button type="button"  id="new" class="btn new">New array</button>
+  <span class="color">
+     No of bar
+    <input id="arr_sz" type="range"  min=20 max=120 step=1 value=60>
+  </span> 
+  <span class="color">
+      Speed
+      <input type="range" id="speed" min=1 max=5 step=1 value=2>
+  </span>
+  <button type="button" class="btn btn-dark merge sort" >Merge sort</button>
+  <button type="button" class="btn btn-dark quick sort" >Quick sort</button>
+  <button type="button" class="btn btn-dark insertion sort" >Insertion sort</button>
+  <button type="button" class="btn btn-dark selection sort" >Selection sort</button>
+  <button type="button" class="btn btn-dark bubble sort" >Bubble sort</button>
+
+  <div id="bar"></div>
+
+<script type="text/javascript" src="js_files/sorting.js"></script>
+<script type="text/javascript" src="js_files/bubble.js"></script>
+<script type="text/javascript" src="js_files/selection.js"></script>
+<script type="text/javascript" src="js_files/insertion.js"></script>
+<script type="text/javascript" src="js_files/quick.js"></script>
+<script type="text/javascript" src="js_files/merge.js"></script>
+</body>
+</html>
